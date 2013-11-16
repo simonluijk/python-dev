@@ -8,11 +8,10 @@ Vagrant::Config.run do |config|
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ["chef-repo/cookbooks"]
     chef.roles_path = ["chef-repo/roles"]
-    chef.add_role "cache"
     chef.add_role "database"
     chef.add_recipe "dev_db"
     chef.json.merge!({:postgresql => {
-        :password => {:postgres => "stagingpasswd" },
+        :password => {:postgres => "passwd" },
         :config => {:listen_addresses => "172.16.0.10" },
         :pg_hba => [
             {:type => "local", :db => "all", :user => "postgres", :addr => nil, :method => "ident"},
