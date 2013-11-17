@@ -16,7 +16,7 @@ Setting up
 ----------
 
 * Open your projects folder in a terminal.
-* `git clone git@github.com/simonluijk/python-dev.git`
+* `git clone git://github.com/simonluijk/python-dev.git`
 * `cd python-dev`
 * `git submodule update --init`
 * `cd chef-repo`
