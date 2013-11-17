@@ -22,7 +22,7 @@ Setting up
 * `cd chef-repo`
 * `git submodule update --init`
 * `cd ../`
-$ `vagrant up`
+* `vagrant up`
 
 Once it has finished download a base image it will setup a Virtualbox image
 with Postgresql installed by default. That's all there is to it.
